@@ -1,0 +1,47 @@
+# **challenges**
+
+1. Form validation is the first thing if in marked down text some enter a js script than it will run in user browser, so I have to delete this script and have to use purifier for that.
+
+2. Form in html only supports get and post request but not delete or put request on db , I fixed that.
+
+3. When you edit a article I have to save old state of articles that was difficult part.
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+
+1. After this project am clear that what is difference in site html,css,js and node , express.
+<br/>
+2. App using part of server side rendering , so I got some part of that.
+<br/>
+
+3. **Important thing is their is only one file from express control whole app.**
+
+4. Node will not understand HTML , you have to use template engin to render you view that will show dynamic data on the page.
+
+5. I used mongodb atlas as cloud database.
+
+| Number | Technology |
+|- - - - - - - - | - - - - - - - - - - |
+| 1              | Node js |
+| 2   | Express |
+| 3  | Mongo Db|
+| 4 | EJS |
+| 5 | marked npm package |
+| 6 | js purifier |
+
+
+================
+# Main reason
+
+If you want write something and want make it public then blog is best idea but you have to write on your web page in html and have apply custom style on in and that is time consuming.so you can use this site to write your content in markdown format and we will convert that into html and render on the page.

@@ -74,7 +74,7 @@ router.put('/:id', async (req, res) => {
 
 
 router.delete('/:id',async(req,res) =>{
-    const article = await Article.findByIdAndDelete(req.params.id);
+    //const article = await Article.findByIdAndDelete(req.params.id);
     
     res.redirect('/');
 })
