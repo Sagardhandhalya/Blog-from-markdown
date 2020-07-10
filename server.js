@@ -5,11 +5,13 @@ const mongoose = require('mongoose')
 const methodOverrider = require('method-override')
 const articleRouter = require("./router.js")
 
+const key = require('./config/key')
+
 
 app.set('view engine','ejs');
 app.use(methodOverrider('_method'))
-mongoose.connect('mongodb://localhost/blog',
-    { useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(key.URI,
+    { useNewUrlParser: true, useUnifiedTopology: true}).catch(err => { console.log(err); });
 app.use(express.urlencoded({extended:false}))
 
 
