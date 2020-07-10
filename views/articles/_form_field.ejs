@@ -1,0 +1,24 @@
+
+<div class="form-group">
+
+    <label for="title">Tiltle</label>
+    <input required type="text" name="title" id="title" class="form-control"  value= "<%= article.title %>" >
+
+</div>
+
+<div class="form-group">
+
+    <label for="title">Descreption</label>
+    <textarea  type="text" name="descreption" id="descreption" class="form-control"><%= article.descreption %></textarea>
+
+</div>
+
+<div class="form-group">
+
+    <label for="title">Markdown</label>
+    <textarea required rows=10 required type="text" name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+
+</div>
+
+<a href="/" class="submit btn btn-danger">cancle</a>
+<button type="submit" class="submit btn btn-primary">save</button>
