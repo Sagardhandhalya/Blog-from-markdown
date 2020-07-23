@@ -15,6 +15,8 @@ router.get('/edit/:id', async (req, res) => {
 
 })
 
+
+
 router.get('/:id', async (req,res)=>{
     const article = await Article.findById(req.params.id);
    if(article == null) res.redirect('/');
@@ -35,12 +37,12 @@ router.post('/', async (req,res)=>{
             );
     try { 
         article = await article.save();
-        res.redirect(`articles/${article.id}`)
+        res.redirect(`/articles/${article.id}`)
 
     }
     catch(e){
 
-        res.render('articles/new',{article})
+        res.render('/articles/new',{article})
         
     }
             
@@ -76,7 +78,7 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id',async(req,res) =>{
     //const article = await Article.findByIdAndDelete(req.params.id);
     
-    res.redirect('/');
+    res.redirect('/article');
 })
 
 module.exports = router;
